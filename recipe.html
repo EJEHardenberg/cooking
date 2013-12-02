@@ -1,0 +1,17 @@
+<div class="padding">
+	<div class="recipe">
+		<h3>{{title}}</h3>
+		<img data-src="{{image}}" />
+		<h4>{{difficulty}}</h4>
+		<p>{{excerpt}}</p>
+		<ul>
+			{{#each ingredients}}
+			<li>{{name}}</li>
+			{{/each}}
+		</ul>
+		<div class="directions">
+			<a href="#">...</a>
+			<p>{{directions}}</p>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,27 @@
+header,footer, #content{
+	margin: 0 auto;
+	text-align: center;
+}
+
+body{
+	background-color: #1e3;
+	font-family: Geneva, Tahoma, Verdana, sans-serif;
+}
+#content{
+	background-color: #2f4;
+}
+
+.template{
+	display: none;
+}
+.padding{
+	padding: .5em;
+	margin: .5em;
+	display: inline-block;
+	border-radius: .5em;
+	background-color: #eee;
+}
+
+.recipe,.padding{
+	vertical-align: top;
+}
