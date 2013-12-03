@@ -19,7 +19,7 @@
 {
 	"title" : "Baked Cheddar Chicken",
 	"image" : "baked-chedder-chicken.jpg",
-	"difficulty" : "Medium",
+	"difficulty" : "Easy",
 	"ingredients" : [
 		{"name" : "Chicken Breast"},{ "name" : "Shredded cheese"},{ "name" : "Milk"},{ "name" : "Melted Butter"},{"name" : "Breadcrumbs"}
 	],
@@ -63,6 +63,32 @@
 		{"instruction" : "sprinkle top of pie with crumble or seal with a second pie crust if you have one (slice to vent)"},
 		{"instruction" : "Cover edge of pie with tin foil"},
 		{"instruction" : "Bake pie in center of oven for 20 minutes, remove strip bake for 25-30 more"}
+	]
+},
+{
+	"title" : "Chicken and Rice",
+	"image" : "poached-marinade.jpg",
+	"difficulty" : "Medium",
+	"ingredients" : [
+		{"name" : "1/2 cup Rice"},
+		{"name" : "1 cup water"},
+		{"name" : "Chili and Cumin Spices"},
+		{"name" : "1 Onion"},
+		{"name" : "1 Red and Green Pepper"},
+		{"name" : "2 Chicken breasts"}
+	],
+	"excerpt" : "30 minutes Chicken and Spiced Rice",
+	"directions" : [
+		{"instruction" : "Boil water in a small pot"},
+		{"instruction" : "Slice chicken into strips"},
+		{"instruction" : "Chop Onion and Peppers"},
+		{"instruction" : "Heat pan to medium heat and dump vegis in"},
+		{"instruction" : "Add spices to boiling water (to taste)"},
+		{"instruction" : "When water is boiled, add rice, turn heat to simmer low and add rice. Cover and don't open for 20 minutes"},
+		{"instruction" : "When rice has been in for about 5-10 minutes, add chicken to vegitables"},
+		{"instruction" : "turn chicken occasionally until rice is done"},
+		{"instruction" : "Pour rice onto plate, pour vegitables on top and add soy sauce"},
+		{"instruction" : "Eat."}
 	]
 }
 ]
