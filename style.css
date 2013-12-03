@@ -27,11 +27,14 @@ body{
 	width: 15em;
 	vertical-align: top;
 }
+.padding:hover{
+	border: solid thin black;
+}
 .card img{
 	/* Fixed image size */
 	text-align: center;
-	width: 8em;
-	height: 6em;
+	max-width: 8em;
+	max-height: 6em;
 	background: no-repeat center scroll;
 	
 }
