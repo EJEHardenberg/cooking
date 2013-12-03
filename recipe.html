@@ -1,17 +1,26 @@
-<div class="padding">
+<div>
 	<div class="recipe">
-		<h3>{{title}}</h3>
-		<img data-src="{{image}}" />
-		<h4>{{difficulty}}</h4>
+		<h3 class="recipe-title">{{title}}</h3>
+		<h4 class="difficulty {{difficulty}}">Difficultly: {{difficulty}}</h4>
 		<p>{{excerpt}}</p>
-		<ul>
-			{{#each ingredients}}
-			<li>{{name}}</li>
-			{{/each}}
-		</ul>
-		<div class="directions">
-			<a href="#">...</a>
-			<p>{{directions}}</p>
+		<h4>Ingredients</h4>
+		<div class="ingredients">
+			<ul>
+				{{#each ingredients}}
+				<li>{{name}}</li>
+				{{/each}}
+			</ul>
 		</div>
+		<h4>Instructions</h4>
+		<div class="directions">
+			<ol>
+				{{#each directions}}
+					<li>
+						<p>{{instruction}}</p>
+					</li>
+				{{/each}}
+			</ol>
+		</div>
+		<img data-src="img/{{image}}" />
 	</div>
 </div>

@@ -11,15 +11,31 @@
 				<h1>My Cookbook</h1>
 			</div>
 			<!-- If make a navigation of some kind it would go here -->
+			<div>
+				<input type="text" id="search" title="Search">
+			</div>
+			<img id="loader" src="img/ajax-loader.gif">
 		</header>
 
-		<div id="content">
-			<img id="loader" src="ajax-loader.gif">
-		</div>
+		<div class="hidden" id="content"></div>
+		<div class="hidden" id="recipe-display"></div>
 
 		<footer id="footer">
-			<div class="template" id="recipe-template"></div>
-			<div class="template" id="recipe-data"></div>
+			<div class="hidden" id="recipe-template"></div>
+			<div class="hidden" id="card-template">
+				<div class="padding card-container">
+					<div class="card">
+						<a href="#" onclick="return false;" class="card-click">
+							<h2 class="card-title" ref="{{index}}">{{title}}</h2>
+							<img data-src="img/{{image}}" />
+							<h4>{{difficulty}}</h4>
+							<p>{{excerpt}}</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="hidden" id="recipe-data"></div>
+			
 			<script type="text/javascript" src="jquery.min.1.9.1.js"></script>
 			<script type="text/javascript" src="handlebars-v1.1.2.js"></script>
 			<script type="text/javascript" src="application.js"></script>
