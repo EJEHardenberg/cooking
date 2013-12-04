@@ -100,13 +100,15 @@ jQuery( document ).ready(function( $ ) {
 
 		var arr = [];
 		for (var i = 0; i < templateJSON.ingredients.length; i++) {
-			arr.push({ "name" : templateJSON.ingredients[i]});
+			if(templateJSON.ingredients[i].length > 0)
+				arr.push({ "name" : templateJSON.ingredients[i]});
 		};
 		templateJSON.ingredients = arr;
 
 		var arr = [];
 		for (var i = 0; i < templateJSON.directions.length; i++) {
-			arr.push({ "instruction" : templateJSON.directions[i]});
+			if(templateJSON.directions[i].length > 0)
+				arr.push({ "instruction" : templateJSON.directions[i]});
 		};
 		templateJSON.directions = arr;
 
