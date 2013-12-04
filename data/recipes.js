@@ -103,7 +103,11 @@
 	],
 	"excerpt":"Delicious Simple Garlic Bread",
 	"directions":[
-	"Cut Loaf of bread in half","Spread butter on bread thickly","Chop garlic thinly, then spread over bread","sprinkle cheese on bread","On the top rack of the oven, broil the bread for 3-5 minutes"
+		{"instruction":"Cut Loaf of bread in half"},
+		{"instruction" : "Spread butter on bread thickly"},
+		{"instruction" : "Chop garlic thinly, then spread over bread"},
+		{"instruction" : "sprinkle cheese on bread"},
+		{"instruction" : "On the top rack of the oven, broil the bread for 3-5 minutes"}
 	]
 },
 {
