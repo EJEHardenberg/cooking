@@ -105,5 +105,31 @@
 	"directions":[
 	"Cut Loaf of bread in half","Spread butter on bread thickly","Chop garlic thinly, then spread over bread","sprinkle cheese on bread","On the top rack of the oven, broil the bread for 3-5 minutes"
 	]
-}
+},
+{
+	"title":"Radish Pizza (From Emily)",
+	"image":"radish-pizza.jpeg",
+	"difficulty":"Easy",
+	"ingredients":[
+		{"name":"several radishes"},
+		{"name":"a bit of goat cheese"},
+		{"name":"half an Italian sausage, cooked and sliced"},
+		{"name":"ricotta cheese"},
+		{"name":"2 cloves garlic"},
+		{"name":"dried basil"},
+		{"name":"half a red onion"},
+		{"name":"olive oil"},
+		{"name":"salt and pepper"},
+	],
+	"excerpt":"Heaven With a Crust",
+	"directions":[
+		{"instruction":"Bake the pizza crust (thinly spread) at 450-500 degrees Fahrenheit for 5-10 mins, or until on the verge of crispy"},
+		{"instruction":"Carmelize the onion with the garlic"},
+		{"instruction":"Spread the ricotta on the pizza dough"},
+		{"instruction":"Slice the radish thinly and place all over pizza"},
+		{"instruction":"sprinkle the onion, garlic, basil, sausage slices, and goat cheese on top"},
+		{"instruction":"grind pepper and sprinkle salt to taste"},
+		{"instruction":"Bake pizza for 5-10mins more, or until the cheese is satisfactorily melted and the crust is a bit brown"}
+		]
+	}
 ]
