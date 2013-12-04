@@ -121,7 +121,7 @@
 		{"name":"olive oil"},
 		{"name":"salt and pepper"},
 	],
-	"excerpt":"Heaven With a Crust",
+	"excerpt":"You think you hate radishes? Think again, This recipe is a bona fide radish converter",
 	"directions":[
 		{"instruction":"Bake the pizza crust (thinly spread) at 450-500 degrees Fahrenheit for 5-10 mins, or until on the verge of crispy"},
 		{"instruction":"Carmelize the onion with the garlic"},
@@ -129,7 +129,8 @@
 		{"instruction":"Slice the radish thinly and place all over pizza"},
 		{"instruction":"sprinkle the onion, garlic, basil, sausage slices, and goat cheese on top"},
 		{"instruction":"grind pepper and sprinkle salt to taste"},
-		{"instruction":"Bake pizza for 5-10mins more, or until the cheese is satisfactorily melted and the crust is a bit brown"}
+		{"instruction":"Bake pizza for 5-10mins more, or until the cheese is satisfactorily melted and the crust is a bit brown"},
+		{"instruction":"optional: sprinkly with arugula and drizzle with balsamic vinaigrette if you're feeling wild"}
 		]
 	}
 ]
