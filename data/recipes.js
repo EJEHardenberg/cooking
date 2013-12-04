@@ -67,7 +67,7 @@
 },
 {
 	"title" : "Chicken and Rice",
-	"image" : "poached-marinade.jpg",
+	"image" : "chicken-and-rice.jpg",
 	"difficulty" : "Medium",
 	"ingredients" : [
 		{"name" : "1/2 cup Rice"},
@@ -89,6 +89,21 @@
 		{"instruction" : "turn chicken occasionally until rice is done"},
 		{"instruction" : "Pour rice onto plate, pour vegitables on top and add soy sauce"},
 		{"instruction" : "Eat."}
+	]
+},
+{
+	"title":"Garlic Bread",
+	"image":"garlic-bread.jpg",
+	"difficulty":"Easy",
+	"ingredients":[
+		{"name" : "Thick Bread (italian works well)"},
+		{"name" : "4-6 cloves of Garlic"},
+		{"name" : "Butter"},
+		{"name" : "Shredded Cheese"}
+	],
+	"excerpt":"Delicious Simple Garlic Bread",
+	"directions":[
+	"Cut Loaf of bread in half","Spread butter on bread thickly","Chop garlic thinly, then spread over bread","sprinkle cheese on bread","On the top rack of the oven, broil the bread for 3-5 minutes"
 	]
 }
 ]

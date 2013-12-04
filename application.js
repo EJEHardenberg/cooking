@@ -33,7 +33,8 @@ jQuery( document ).ready(function( $ ) {
 	});
 
 	/* Search functionality for recipes based on title only.*/
-	$('#search').val($('#search').attr('title'));
+	$('#search, .auto-title').each(function(){$(this).val($(this).attr('title'));});
+
 	$('#search').on('keyup',function(evt){
 		var val = $(this).val().toUpperCase();
 		var titles = $('.card-title');
@@ -49,7 +50,7 @@ jQuery( document ).ready(function( $ ) {
 		if(val.trim().length <= 0)
 			titles.parent().parent().fadeIn();
 	});
-	$('#search').on('focus',function(evt){
+	$('#search, .auto-title').on('focus',function(evt){
 		if($(this).val() == $(this).attr('title')){
 			$(this).val('');
 		}
@@ -60,16 +61,71 @@ jQuery( document ).ready(function( $ ) {
 			$('.recipe-title').parent().parent().fadeIn();
 		$(this).val($(this).attr('title'));
 	});
+	$('.auto-title').on('blur',function(evt){
+		if(!$(this).val()){
+			$(this).val($(this).attr('title'));
+		}
+	});
 
 	/* Closing of Dialogs if clicked out */
-	$('#recipe-display').click(function(evt){evt.stopPropagation();});
+	$('#recipe-display,#format-form').click(function(evt){evt.stopPropagation();});
 	$(document).click(function(event) { 
 	    if($(event.target).parents().index($('#recipe-display')) == -1) {
 	        if($('#recipe-display').is(":visible")) {
-	            $('#recipe-display').hide()
-	            
+	            $('#recipe-display').hide();
 	        }
-	    }        
+	    }
+	    if($(event.target).parents().index($('#format-form')) == -1) {
+	        if($('#format-form').is(":visible")) {
+	            $('#format-form').hide();
+	        }
+	    }
 	});
+
+	/* Click show generation form */
+	$("#show-generation-form").on('click', function(evt){
+		$('#format-form').show();
+		evt.stopPropagation();
+	});
+
+	function makeJSON(){
+		/* Construct the JSON and place it in the copying area */
+		var templateJSON = { "title" : "", "image" : "", "difficulty" : "", "ingredients" : [], "excerpt" : "", "directions" : [] };
+		templateJSON.title = $('#format-form input[name="title"]').val();
+		templateJSON.image = $('#format-form input[name="image"').val();
+		templateJSON.difficulty = $('#format-form input[name="difficulty"]:checked').val();
+		templateJSON.excerpt = $('#format-form input[name="excerpt"]').val();
+		templateJSON.ingredients = $('#format-form textarea[name="ingredients"]').val().split("\n");
+		templateJSON.directions = $('#format-form textarea[name="instructions"]').val().split("\n");
+
+		var arr = [];
+		for (var i = 0; i < templateJSON.ingredients.length; i++) {
+			arr.push({ "name" : templateJSON.ingredients[i]});
+		};
+		templateJSON.ingredients = arr;
+
+		var arr = [];
+		for (var i = 0; i < templateJSON.directions.length; i++) {
+			arr.push({ "instruction" : templateJSON.directions[i]});
+		};
+		templateJSON.directions = arr;
+
+		$('#generated-area').val(JSON.stringify(templateJSON));
+	}
+
+	$('#format-form form').on('keyup', function(evt){
+		makeJSON();
+	});
+	$('#format-form input[type="radio"]').click(function(evt){
+		makeJSON();
+	})
+
+	$('#copy-button').click(function(evt){
+		copyToClipboard($('#generated-area').val());
+		return false;
+	});
+	function copyToClipboard (text) {
+  		window.prompt ("Copy to clipboard: Ctrl+C, Enter", text);
+	}
 
 });

@@ -1,18 +1,59 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title id="title">My Online Cookbook</title>
+		<title id="title">Ethan's Online Cookbook | College Fried Chicken</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 
 	<body>
 		<header id="navigation">
 			<div>
-				<h1>My Cookbook</h1>
+				<h1>College Fried Chicken</h1>
+				<p>
+					I like to cook. These are recipes I cook for dinner often.
+					And since it's nice to share, here they are. If you'd like
+					to submit your own recipe then use the Generation Form to
+					create the data, and send that to me via email or a pull
+					request on <a href="//www.github.com/ejehardenberg">github</a>
+				</p>
+				<p>
+					You can also find recipes quickly by typing in the search box below
+				</p>
 			</div>
 			<!-- If make a navigation of some kind it would go here -->
 			<div>
 				<input type="text" id="search" title="Search">
+			</div>
+			<!-- Simple Form that will generate JSON from text areas -->
+			<button id="show-generation-form">Show Generation Form</button>
+			<div id="format-form" class="hidden">
+				<form>
+					<div class="leftSide">
+					<input class="auto-title" type="text" name="title" title="Recipe Title" />
+					<input class="auto-title" type="text" name="image" title="Recipe Image URL" />
+					<input class="auto-title" type="text" name="excerpt" title="Brief description" />
+					<div>
+						<label>
+							Easy
+							<input type="radio" checked name="difficulty" value="Easy" />
+						</label>
+						<label>
+							Medium
+							<input type="radio" name="difficulty" value="Medium" />
+						</label>
+						<label>
+							Hard
+							<input type="radio" name="difficulty" value="Hard" />
+						</label>
+					</div>
+					<textarea class="auto-title" name="ingredients" title="Ingredients, one per line"></textarea>
+					<textarea class="auto-title" name="instructions" title="Directions, one instruction per line"></textarea>
+					</div>
+					<div class="rightSide">
+						<textarea id="generated-area" class="auto-title" title="Begin typing your recipe" readonly></textarea>
+						<button id="copy-button">Click to Copy</button>
+					</div>
+				</form>
 			</div>
 			<img id="loader" src="img/ajax-loader.gif">
 		</header>
