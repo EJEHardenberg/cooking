@@ -119,7 +119,7 @@
 		{"name":"dried basil"},
 		{"name":"half a red onion"},
 		{"name":"olive oil"},
-		{"name":"salt and pepper"},
+		{"name":"salt and pepper"}
 	],
 	"excerpt":"You think you hate radishes? Think again, This recipe is a bona fide radish converter",
 	"directions":[
@@ -131,6 +131,6 @@
 		{"instruction":"grind pepper and sprinkle salt to taste"},
 		{"instruction":"Bake pizza for 5-10mins more, or until the cheese is satisfactorily melted and the crust is a bit brown"},
 		{"instruction":"optional: sprinkly with arugula and drizzle with balsamic vinaigrette if you're feeling wild"}
-		]
-	}
+	]
+}
 ]
